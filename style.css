@@ -1,0 +1,34 @@
+body {
+    background-color: thistle;
+}
+/* this is how you make comments is css */
+.navigationAll {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-right: 3px;
+    margin-bottom: 5px;
+    border-style: solid;
+    border-color: ivory;
+    background-color: lavenderblush;
+    width: 170px;
+    
+}
+.navigationSelf {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-right: 3px;
+    border-style: double;
+    border-color: ivory;
+    background-color: lavenderblush;
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 1px 1px rgb(207, 152, 207);
+}
+h4 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+p, ul {
+    color: rgb(39, 3, 39);
+}
