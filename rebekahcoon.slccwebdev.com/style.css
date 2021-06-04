@@ -1,0 +1,85 @@
+body {
+    background-color: thistle;
+}
+/* this is how you make comments is css */
+.navigationAll {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-right: 3px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-color: ivory;
+    background-color: lavenderblush;
+    width: 170px;
+    position: fixed;
+    display: block;
+    
+}
+.navigationSelf {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-right: 3px;
+    border-style: double;
+    border-color: ivory;
+    background-color: lavenderblush;
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 7px;
+    margin-top: 5px;
+}
+h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 1px 1px rgb(207, 152, 207);
+}
+h4 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+p, ul {
+    color: rgb(39, 3, 39);
+}
+.footer{
+    background-color: lavenderblush;
+    position:static;
+   bottom: 0px;
+   display: block;
+    
+}
+.footer p, h4{
+    text-align: center;
+}
+.form{
+    float: right;
+    width: 30%;
+    border-style: double;
+    padding: 10px;
+    border-color: ivory;
+}
+a:link {
+    color:hotpink;
+    text-decoration: dotted underline;
+}
+a:hover {
+    color: blue;
+}
+.bio{
+width: 70%;
+}
+.educate{
+width: 70%;
+}
+.proEx{
+width: 70%;
+}
+.techSkills{
+width: 70%;
+}
+.competencies{
+width: 70%;
+}
+.certificates{
+width: 70%;
+}
+.port{
+width: 70%;
+}
+.ref{
+width: 70%;
+}
