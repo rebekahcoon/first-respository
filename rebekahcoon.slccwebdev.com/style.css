@@ -26,7 +26,7 @@ body {
 }
 h3 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-shadow: 1px 1px rgb(207, 152, 207);
+    
 }
 h4 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -46,40 +46,17 @@ p, ul {
     text-align: center;
 }
 .form{
-    float: right;
-    width: 30%;
-    border-style: double;
-    padding: 10px;
-    border-color: ivory;
+   
 }
-a:link {
-    color:hotpink;
-    text-decoration: dotted underline;
+
+.blueBlanket{
+    height: 75vh;
 }
-a:hover {
-    color: blue;
+.scarf {
+    height: 75vh;
 }
-.bio{
-width: 70%;
+.purpleBlanket{
+    height: 75vh;
 }
-.educate{
-width: 70%;
-}
-.proEx{
-width: 70%;
-}
-.techSkills{
-width: 70%;
-}
-.competencies{
-width: 70%;
-}
-.certificates{
-width: 70%;
-}
-.port{
-width: 70%;
-}
-.ref{
-width: 70%;
-}
+
+
