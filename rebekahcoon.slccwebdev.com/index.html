@@ -284,7 +284,54 @@
           function popup() {
             let person = prompt("Please enter your name")
 
-            alert( "Hello " + person + "!" + " Thanks for coming to my resume site!")
+            let time = new Date().getHours();
+            console.log("I can't believe it's" + time)
+            let greeting = "";
+             if (time<12){
+               greeting = "Good Morning, ";
+               console.log(greeting);
+             }
+             else if (time<17){
+               greeting = "Good Afternoon, ";
+               console.log(greeting);
+
+             }
+             else {
+               greeting = "Good Night, ";
+               console.log(greeting);
+             }
+
+             let closing = "";
+             if (time<12) {
+               closing = "What a great start to the day!";
+               console.log(closing);
+             }
+             else if (time<17) {
+               closing = "Hope your lunch was good!";
+               console.log(closing);
+             }
+             else{
+               closing = "Now go get some sleep!";
+               console.log(closing);
+             }
+
+            alert( greeting + person + "!" + " Thanks for coming to my resume site!" + " " + closing)
+          }
+        </script>
+        <!--javascript code for color changing background-->
+        <script>
+          let time = new Date().getHours();
+          if (time <10){
+            document.body.style.backgroundColor="#fdffcf"
+          }
+          else if (time<12){
+            document.body.style.backgroundColor="#cffffc"
+          }
+          else if (time<17){
+            document.body.style.backgroundColor="#cffff5"
+          }
+          else {
+            document.body.style.backgroundColor="#cfdaff"
           }
         </script>
 
