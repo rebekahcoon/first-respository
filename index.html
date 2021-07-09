@@ -3,101 +3,416 @@
     <head>
         <title>My Resume</title>
         <link rel="stylesheet" href="style.css">
-    </head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>></script>
+        <script>
+          $(document).ready(function(){
+            $(".toggle").click(function(){
+              $(".tContent").toggle();
+            });
+          });
+          </script>
+      </head>
     <body>
-      <header>
-          <nav class="navigationAll">
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./portfolio.html">Portfolio</a>
-         </nav>
-        <nav class="navigationSelf">
-            <a href="#personalBio">Personal Bio</a>
-            <a href="#education">Education</a>
-            <a href="#professionalExperience">Professional Experience</a>
-            <a href="#technicalSkills">Technical Skills</a>
-            <a href="#coreCompetencies">Core Competencies</a>
-            <a href="#certificatesAwards">Certificates and Awards</a>
-            <a href="#portfolio">Portfolio and Projects</a>
-            <a href="#references">References and Testimonials</a>
-            <a href="#contact">Contact Me</a>
-        </nav>
-      </header> 
-        <div class="bio">
-        <h3 id="personalBio">Personal Bio</h3>
-           <p>Rebekah Coon</p>
-           <p>(801)361-4183</p>
-        </div>
-        <div class="educate">
-        <h3 id="education">Education</h3>
-            <ul>
-                <li>Utah Valley University</li>
-                    <ul>
-                        <li>Associates degree in GenEd</li>
-                    </ul>
-                <li>Springville High School</li>
-                    <ul>
-                        <li>Highschool Diploma</li>
-                    </ul>
-            </ul>
-        </div>
-        <div class="proEx">
-        <h3 id="professionalExperience">Professional Experience</h3>
-            <ul>
-                <li>Sprinkler World (2017-Present)</li>
-                    <ul>
-                        <li>Sales Associate and Warehouse Manager</li>
-                    </ul>
-            </ul>
-        </div>
-        <div class="techSkills">
-        <h3 id="technicalSkills">Technical Skills</h3>
-            <ul>
-                <li>Google Drive</li>
-                <li>Phone Skills</li>
-            </ul>
-        </div>
-        <div class="competencies">
-        <h3 id="coreCompetencies">Core Competencies</h3>
-            <p>
-                I am flexible with schedules, and adaptive to new circumstances.
-            </p>
-        </div>
-        <div class="certificates">
-        <h3 id="certificatesAwards">Certificates and Awards</h3>
-        <!--dont have really any awards or certificates-->
-            <p>I need filler text to create more space What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?</p>
-        </div>
-        <div class="port">
-        <h3 id="portfolio">Portfolio of Projects</h3>
-        <p>I need filler text to create more spaceWhat is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?</p>
-        </div>
-        <div class="ref">
-        <h3 id="references">References and Testimonials</h3>
-            <p>Bridget McMullin
-                <ul>
-                    <li>Current Manager</li>
+        <nav class="navbar navbar-expand-md navbar-dark" style="background-color: rgb(63, 15, 107);">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Rebekah Coon</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                  </li>
                 </ul>
-            </p>
-        </div>
-        <div class="form" id="contact">
-        <h4>Contact Me</h4>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name"><br>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email"><br>
-            <label for="comment">Comments?</label><br>
-            <textarea id="comment" name="comment" rows="4" cols="30"></textarea><br>
-            <p>Can I contact you back?</p>
-            <input type="radio" id="yes" name="contactBack" value="yes">
-            <label for="yes">Yes</label>
-            <input type="radio" id="no" name="contactBack" value="no">
-            <label for="no">No</label> <br>
-            <input type="submit" value="Submit">
+                
+              </div>
+            </div>
+          </nav>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end" id="sidebar-wrapper" style="background-color:rgb(63, 15, 107);">
+                <div class="sticky-top">
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#about">About Rebekah</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#education">Education</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#professionalExperience">Professional Experience</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#technicalSkills">Technical Skills</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#coreCompetencies">Core Competencies</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#certificatesAwards">Certficates and Awards</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#portfolio">Portfolio</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#references">References</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#contact">Contact Me</a>
+                </div>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+               
+                <!-- Page content-->
+                <div class="container-fluid">
+                    <section id="about">
+                        <div class="container">
+                          <div class="row align-items-center justify-content-center text-center py-5">
+                            <div class="col-6 col-md-4">
+                              <img onmouseover="popup()" src="https://scontent-den4-1.xx.fbcdn.net/v/t1.6435-9/71688301_1494416444029705_4087757281704280064_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=p32NQ78dYxwAX9fyBGl&_nc_ht=scontent-den4-1.xx&oh=88cfa4cb928c892354eb84e39ae7aa05&oe=60E03F15" 
+                              alt="My headshot" class="img-fluid">
+                            </div>
+                            <div class="col-lg-8 my-3">
+                              <h2 class="font-weight-bold" >Rebekah Coon</h1>
+                                
+                              <hr class="my-4" style="background-color:rgb(63, 15, 107);"/>
+                              <p class="font-weight-light mx-5">
+                                Born and raised in Utah, I now spend my time learning to code and spending way too much money on yarn. I married my sweet husband in 2017, and he has been my best friend and biggest supporter since. 
+                              </p>
+                            </div>  
+                          </div>  
+                        </div>
+                      </section>
 
-        </form>
+                      <section id="ept" style="background-color: rgb(161, 229, 252);">
+                        <div class="container-fluid py-5">
+                          <div class="row text-black text-center">
+                            <div class="col">
+                             
+                              <hr style="background-color:rgb(63, 15, 107);" class="mb-5" />
+                            </div>
+                          </div>
+
+                          <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+
+                            <div class="col mb-4">
+                              <div class="card bg-light text-center border-light shadow h-78"> 
+                                <div class="card-body">
+                                  <h3 id="education" class="card-title">Education</h3>
+                                  <hr style="background-color:rgb(63, 15, 107);" />
+                                  <p class="card-text"> 
+                                      Associates in GenEd degree from Utah Valley University
+                                  </p>
+                                  <p class="card-text">
+                                      High school Diploma from Springville High School
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col mb-4">  
+                              <div class="card bg-light text-center border-light shadow h-78">
+                                <div class="card-body">
+                                  <h3 id="professionalExperience" class="card-title toggle">Professional Experience</h3>
+                                  <div id="hideContent">
+                                  <hr style="background-color:rgb(63, 15, 107);" />
+                                  
+                                  <p class="card-text tContent">
+                                      2018-Present:
+                                 </p>
+                                 <p class="card-text tContent">Sprinkler World in Sandy, UT. Sales Associate and Warehouse Manager</p>
+                                 <p class="card-text tContent">2015-2016, 2017-2018:</p>
+                                 <p class="card-text tContent">Sprinkler World in Springville, UT. Sales Associate and TrueValue Manager</p>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col mb-4">
+                              <div class="card bg-light text-center border-light shadow h-78">
+                                <div class="card-body">
+                                  <h3 id="technicalSkills" class="card-title">Technical Skills</h3>
+                                  <hr style="background-color:rgb(63, 15, 107);" />
+                                  <p class="card-text" id="tech"></p>
+                                
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                             
+                            <hr style="background-color:rgb(63, 15, 107);" />
+                          </div>
+                        </div>
+                      </section>
+
+                      <br>
+
+                      <section id="ept" style="background-color: rgb(161, 229, 252);">
+                        <div class="container-fluid py-5">
+                          <div class="row text-black text-center">
+                            <div class="col">
+                             
+                              <hr style="background-color:rgb(63, 15, 107);" class="mb-5" />
+                            </div>
+                          </div>
+
+                          <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+
+                            <div class="col mb-4">
+                              <div class="card bg-light text-center border-light shadow h-78"> 
+                                <div class="card-body">
+                                  <h3 id="coreCompetencies" class="card-title">Core Competencies</h3>
+                                  <hr style="background-color:rgb(63, 15, 107);" />
+                                  <p class="card-text"> 
+                                      Flexable with schedules
+                                  </p>
+                                  <p class="card-text">
+                                      Adaptive to new circumstances
+                                  </p>
+                                  <p class="card-text">
+                                      Excellent organization skills and personal time management
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col mb-4">  
+                              <div class="card bg-light text-center border-light shadow h-78">
+                                <div class="card-body">
+                                  <h3 id="certificatesAwards" class="card-title">Certficates and Awards</h3>
+                                  <hr style="background-color:rgb(63, 15, 107);" />
+                                  <p class="card-text">
+                                      Graduated with honors
+                                  </p>
+                                  <p class="card-text">
+                                      Graduated as part of the Chinese National Honors Society
+                                  </p>
+                                  <p class="card-text">
+                                      Recieved Irrigation Knowledge Awards <!--need to remember what the certificate was called-->
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col mb-4">
+                              <div class="card bg-light text-center border-light shadow h-78">
+                                <div class="card-body">
+                                  <h3 id="references" class="card-title">References</h3>
+                                  <hr style="background-color:rgb(63, 15, 107);" />
+                                  <p class="card-text">
+                                      Bridget McMullin, current manager
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                             
+                            <hr style="background-color:rgb(63, 15, 107);" />
+                          </div>
+                        </div>
+                      </section>
+
+                      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div>
+                            <h3 id="portfolio" class="text-center">Portfolio of Projects</h2>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/PXL_20210130_045313814.jpg" class="d-block w-100 blueBlanket" alt="blue blanket">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/PXL_20210325_032128208.MP.jpg" class="d-block w-100 scarf" alt="scarf">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/PXL_20210403_131048618.jpg" class="d-block w-100 purpleBlanket" alt="purple blanket">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+                        
+                         <section id="contact">
+                            <div class="container my-5">
+                              <div class="row justify-content-center text-center">
+                                <div class="col-md-6">
+                                  <h2 class="display-4 font-weight-bold">Contact Me</h2>
+                                  <hr />
+                                </div>
+                              </div>
+                            <!-- Contact Form -->
+                              <div class="row justify-content-center">
+                               <div class="col-6">
+                                <form action="http://form-test.slccwebdev.com/form-success.php"
+                            method="POST">
+                                <div class="form-group">
+                                  <label for="name">Full Name:</label>
+                                  <input type="text" class="form-control" id="name" placeholder="Full Name" name="name" />
+                                </div>
+                                <div class="form-group">
+                                  <label for="email">Email address:</label>
+                                  <input type="email" class="form-control" id="email" placeholder="name@example.com"
+                            name="email" />
+                                </div>
+                                <div class="form-group">
+                                  <label class="control-label">Can we contact you back?</label>
+                                  <div class="form-check">
+                                    <input type="radio" class="form-check-input" name="contact-back" id="yes" value="Yes" checked/>
+                                    <label class="form-check-label" for="yes">Yes</label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input type="radio" class="form-check-input" name="contact-back" id="no" value="No" />
+                                    <label class="form-check-label" for="no">No</label>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="comments">Comments:</label>
+                                 <textarea id="comments" class="form-control" rows="3" name="comments"></textarea>
+                                </div>
+                                <button class="btn btn-primary my-2" type="submit" role="button">Submit</button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+    
+            </div>
+          <div>
+          <p>test for try and catch function</p>
+          <input type="text" id="number" />
+          <button id="btn" onclick="tryIt()">Submit</button>
+          <p id="res"></p>
+          </div>
         </div>
 
+        <script>
+          $(document).ready(function(){
+            $(".hide").click(function(){
+              $("#hideContent").hide();
+            });
+            $(".show").click(function() {
+              $("#hideContent").show();
+            });
+          });
+        </script>
+
+        <script>
+          function tryIt()
+          var num = document.getElementById("number").value;
+            try {
+              if (num === "") {
+                throw "Field cannot be empty";
+              }
+              if (isNaN(num)) {
+                throw "The input is not a number";
+              }
+              if (num < 4) {
+                throw "Number is too small";
+
+              }
+              if (num > 12) {
+                throw "Number is too big";
+              }
+              document.getElementById("res").innerHTML = "Your Input: <b> " + num + "</b>";
+            } catch (error) {
+              document.getElementById("res").innerHTML = "Incorrect Input: <b>" + error + "</b>";
+            }
+       
+        </script>
+        <!--Great Customer Service and Phone skills
+        Profficient in all elements of Google Drive
+        Web Development, HTML, CSS, and Javascript soon-->
+       <!--javascript for technical skills-->   
+      <script>
+        var skills = ["Great Customer Service and Phone skills", "Profficient in all elements of Google Drive", "Web Development, HTML, CSS, and Javascript soon"];
+       let text = "";
+        for (i=0; i<skills.length; i++) {
+          text += skills[i] + "<br>" + "<br>";
+        }
+        document.getElementById("tech").innerHTML = text;
+      </script>
+          
+      <!--javascript code for window popup-->
+        <script>
+          function popup() {
+           
+            let person = prompt("Please enter your name")
+            
+           
+            let time = new Date().getHours();
+            console.log("I can't believe it's" + time)
+            let greeting = "";
+             if (time<12){
+               greeting = "Good Morning, ";
+               console.log(greeting);
+             }
+             else if (time<17){
+               greeting = "Good Afternoon, ";
+               console.log(greeting);
+
+             }
+             else {
+               greeting = "Good Night, ";
+               console.log(greeting);
+             }
+
+             let closing = "";
+             if (time<12) {
+               closing = "What a great start to the day!";
+               console.log(closing);
+             }
+             else if (time<17) {
+               closing = "Hope your lunch was good!";
+               console.log(closing);
+             }
+             else{
+               closing = "Now go get some sleep!";
+               console.log(closing);
+             }
+
+            alert( greeting + person + "!" + " Thanks for coming to my resume site!" + " " + closing)
+          }
+        </script>
+        <!--javascript code for color changing background-->
+        <script>
+          let time = new Date().getHours();
+          if (time <10){
+            document.body.style.backgroundColor="#fdffcf"
+          }
+          else if (time<12){
+            document.body.style.backgroundColor="#cffffc"
+          }
+          else if (time<17){
+            document.body.style.backgroundColor="#cffff5"
+          }
+          else {
+            document.body.style.backgroundColor="#cfdaff"
+          }
+        </script>
+
+        <script>
+          // fun thing to try with loops, could also use css
+          var elements = document.querySelectorAll("a");
+          for (var i=0; i < elements.length; i++) {
+            elements[i].style.color = "#bec70c";
+          }
+        </script>
+
+        <!--need to figure out how to incorpertate this into popup function-->
+       
+
+        <!-- document.getElementById("personID").InnerHTML = "Hello" + person + "!;"-->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     </body>
 </html>
